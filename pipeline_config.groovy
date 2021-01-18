@@ -1,7 +1,7 @@
 pipeline_template = "pipeline1.groovy"
 
 parameters {
-    environment = "sit"
+    environment = "prod"
 }
 
 application_environments{
