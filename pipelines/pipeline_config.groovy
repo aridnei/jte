@@ -1,8 +1,8 @@
 // maven app: pipeline_config.groovy
-jte{
+@merge jte{
     allow_scm_jenkinsfile = false
 }
-libraries{
+@merge libraries{
     maven
     deploy
 }
@@ -13,7 +13,7 @@ parameters {
 }
 
 application_environments{
-	@merge dev{
+    @merge dev{
     	short_name = "dev"
         long_name = "Development"
     }
