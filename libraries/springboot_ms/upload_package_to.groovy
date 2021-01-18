@@ -1,5 +1,5 @@
-void call( def app_env ) {
+void call( app_env ) {
   stage('Upload Package'){
-    println 'uploading package to ' + app_name.short_name
+    println 'uploading package to ' + app_env.short_name
   }
 }
