@@ -14,7 +14,7 @@ parameters {
 
 stages{
     prepare_package{
-        build()
+        build
     }
 }
 
