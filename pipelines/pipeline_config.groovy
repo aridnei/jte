@@ -4,4 +4,4 @@ libraries{
     deploy
 }
 
-pipelineconfig.environment='dev'
+environment='dev'
