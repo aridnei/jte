@@ -1,8 +1,8 @@
 // maven app: pipeline_config.groovy
-@merge jte{
-    allow_scm_jenkinsfile = false
-}
-@merge libraries{
+allow_scm_jenkinsfile = false
+
+libraries {
+    merge = true
     maven
     deploy
 }
@@ -19,15 +19,18 @@ stages{
 }
 
 application_environments{
-    @merge dev{
+    dev{
+        merge = true
     	short_name = "dev"
         long_name = "Development"
     }
-    @merge sit{
+    sit{
+        merge = true
         short_name = "sit"
         long_name = "Stage"
     }
-    @merge prod{
+    prod{
+        merge = true
         short_name = "prod"
         long_name = "Production"
     }
