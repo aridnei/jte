@@ -1,7 +1,7 @@
 build()
-to_env( pipelineConfig.environment ) {
+to_development( pipelineConfig.environment ) {
   deploy_to dev
 }
-to_env( pipelineConfig.environment ) {
+to_production( pipelineConfig.environment ) {
   deploy_to prod
 }
