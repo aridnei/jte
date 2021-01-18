@@ -1,3 +1,3 @@
 build()
-to_env(environment)
+to_env( pipelineConfig.environment )
 deploy_to dev
