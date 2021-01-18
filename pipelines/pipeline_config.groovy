@@ -6,8 +6,7 @@ libraries {
     init
     ansible
     db_interface
-    maven
-    deploy
+    springboot_ms
 }
 
 environment='dev'
