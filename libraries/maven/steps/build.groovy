@@ -1,3 +1,5 @@
 void call(){ 
-  println "running build()" 
+  stage('Build') {
+    println "running build()"
+  }
 }
