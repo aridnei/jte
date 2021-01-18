@@ -1,5 +1,5 @@
-void call( def app_env ) {
+void call( app_env ) {
   stage('Promote'){
-    println 'promoting on ' + app_name.short_name
+    println 'promoting on ' + app_env.short_name
   }
 }
