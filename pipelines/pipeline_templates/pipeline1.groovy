@@ -4,7 +4,7 @@ to_development( pipelineConfig.parameters.environment ) {
   prepare_ansible_to dev
   prepare_package_to dev
   upload_package_to dev
-  promote_to dev
+  promote_on dev
 }
 
 to_stage( pipelineConfig.parameters.environment ) {
@@ -13,10 +13,11 @@ to_stage( pipelineConfig.parameters.environment ) {
              prepare_package_to sit
            },
            db: {
-             promote_db_to sit 
+             prepare_db_changes_to sit 
+             apply_db_changes_to sit
            }
   upload_package_to sit
-  promote_to sit
+  promote_on sit
 }
 
 to_production( pipelineConfig.parameters.environment ) {
@@ -25,8 +26,9 @@ to_production( pipelineConfig.parameters.environment ) {
              prepare_package_to prod
            },
            db: {
-             promote_db_to prod 
+             prepare_db_changes_to prod
+             apply_db_changes_to prod 
            }
   upload_package_to prod
-  promote_to prod
+  promote_on prod
 }
