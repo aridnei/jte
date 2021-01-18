@@ -3,7 +3,7 @@ jte{
 }
 
 application_environments{
-	dev{
+    dev{
         release = "XXXXX"
     }
     sit{
