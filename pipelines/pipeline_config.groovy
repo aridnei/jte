@@ -1,4 +1,7 @@
 // maven app: pipeline_config.groovy
+jte{
+    allow_scm_jenkinsfile = false
+}
 libraries{
     maven
     deploy
