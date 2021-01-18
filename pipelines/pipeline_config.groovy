@@ -10,8 +10,8 @@ libraries {
     springboot_ms
 }
 
-environment='dev'
 parameters {
+    override = true
     environment = "dev"
 }
 
