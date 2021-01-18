@@ -1,4 +1,4 @@
-build()
+prepare_package()
 to_development( pipelineConfig.parameters.environment ) {
   deploy_to dev
 }
@@ -8,4 +8,3 @@ to_stage( pipelineConfig.parameters.environment ) {
 to_production( pipelineConfig.parameters.environment ) {
   deploy_to prod
 }
-
