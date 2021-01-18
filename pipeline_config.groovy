@@ -1,6 +1,4 @@
-jte{
-  pipeline_template = "pipeline1.groovy"
-}
+pipeline_template = "pipeline1.groovy"
 
 application_environments{
     dev{
