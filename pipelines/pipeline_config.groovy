@@ -3,3 +3,5 @@ libraries{
     maven
     deploy
 }
+
+pipelineconfig.environment='dev'
