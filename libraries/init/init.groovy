@@ -1,3 +1,5 @@
-void call(dev description) {
-  currentBuild.description = description
+void call( def description ) {
+  stage('init') {
+    currentBuild.description = description
+  }
 }
