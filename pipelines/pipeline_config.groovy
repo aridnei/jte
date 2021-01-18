@@ -12,6 +12,12 @@ parameters {
     environment = "dev"
 }
 
+stages{
+    prepare_package{
+        build()
+    }
+}
+
 application_environments{
     @merge dev{
     	short_name = "dev"
