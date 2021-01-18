@@ -8,7 +8,7 @@ to_development( pipelineConfig.parameters.environment ) {
 }
 
 to_stage( pipelineConfig.parameters.environment ) {
-  prepare_ansible dev
+  prepare_ansible_to sit
   parallel app: {
              prepare_package_to sit
            },
@@ -21,7 +21,7 @@ to_stage( pipelineConfig.parameters.environment ) {
 }
 
 to_production( pipelineConfig.parameters.environment ) {
-  prepare_ansible prod
+  prepare_ansible_to prod
   parallel app: {
              prepare_package_to prod
            },
