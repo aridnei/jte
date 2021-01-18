@@ -19,7 +19,7 @@ application_environments{
     }
     @merge sit{
         short_name = "sit"
-        long_name = "Production"
+        long_name = "Stage"
     }
     @merge prod{
         short_name = "prod"
