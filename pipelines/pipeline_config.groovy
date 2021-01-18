@@ -3,6 +3,7 @@ allow_scm_jenkinsfile = false
 
 libraries {
     merge = true
+    deploy
     init
     ansible
     db_interface
