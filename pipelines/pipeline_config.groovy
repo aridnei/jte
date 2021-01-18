@@ -3,6 +3,9 @@ allow_scm_jenkinsfile = false
 
 libraries {
     merge = true
+    init
+    ansible
+    db_interface
     maven
     deploy
 }
@@ -15,6 +18,10 @@ parameters {
 stages{
     prepare_package{
         build
+    }
+    promote_db{
+        prepare_db
+        promote_db
     }
 }
 
